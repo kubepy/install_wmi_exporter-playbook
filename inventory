@@ -1,0 +1,13 @@
+[windows]
+192.168.1.100
+192.168.1.101
+192.168.1.103
+
+[windows:vars]
+ansible_user=domain\username
+ansible_password=password
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_transport=ntlm
+ansible_winrm_server_cert_validation=ignore
+wmi_exporter_install=True
