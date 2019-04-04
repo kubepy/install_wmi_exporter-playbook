@@ -1,0 +1,6 @@
+---
+
+- hosts: windows
+  gather_facts: False
+  roles:
+    - wmi_exporter_installer

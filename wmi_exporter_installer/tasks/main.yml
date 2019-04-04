@@ -1,0 +1,11 @@
+---
+# tasks file for wmi_exporter_installer
+
+- name: Install wmi_exporter
+  include_tasks: install.yml
+  when: wmi_exporter_install | bool
+
+- name: Uninstall wmi_exporter
+  include_tasks: uninstall.yml
+  when: not wmi_exporter_install | bool
+

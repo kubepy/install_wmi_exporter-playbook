@@ -1,0 +1,13 @@
+---
+# tasks file for wmi_exporter_installer
+
+- name: Uninstall wmi_exporter for Windows Servers
+  win_package:
+    path: "{{ wmi_exporter_filepath }}{{ wmi_exporter_filename }}"
+    arguments: "{{ wmi_exporter_install_args }}"
+    state: absent
+
+- name: Remove wmi_exporter.msi from Windows Servers
+  win_copy:
+    src: "{{ wmi_exporter_filename }}"
+    dest: "{{ wmi_exporter_filepath }}"
