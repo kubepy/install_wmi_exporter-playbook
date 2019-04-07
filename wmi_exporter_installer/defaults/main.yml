@@ -1,7 +1,7 @@
 ---
 # defaults file for wmi_exporter_installer
 
-wmi_exporter_install: "{{ wmi_exporter_install | default(True) }}"
+wmi_exporter_install: True
 wmi_exporter_filename: wmi_exporter-0.7.0-amd64.msi
 wmi_exporter_filepath: C:\Temp\
 wmi_exporter_install_args: null
