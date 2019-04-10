@@ -1,9 +1,9 @@
-[windows]
+[wmi_exporter]
 192.168.1.100
 192.168.1.101
 192.168.1.103
 
-[windows:vars]
+[wmi_exporter:vars]
 ansible_user=domain\username
 ansible_password=password
 ansible_port=5986
