@@ -4,3 +4,4 @@
   gather_facts: False
   roles:
     - wmi_exporter_installer
+    - rename_ansible_log
