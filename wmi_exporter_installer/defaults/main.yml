@@ -4,4 +4,4 @@
 wmi_exporter_install: True
 wmi_exporter_filename: wmi_exporter-0.7.0-amd64.msi
 wmi_exporter_filepath: C:\Temp\
-wmi_exporter_install_args: null
+wmi_exporter_install_args: "ENABLED_COLLECTORS=cpu,cs,logical_disk,net,os,service,system,textfile,tcp,process"
